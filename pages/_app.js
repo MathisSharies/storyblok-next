@@ -5,6 +5,7 @@ import Grid from "../components/Grid";
 import Page from "../components/Page";
 import Teaser from "../components/Teaser";
 import Hero from "../components/Hero";
+import Button from "../components/Button";
 import AllArticles from "../components/AllArticles";
 import Article from "../components/Article";
 import PopularArticles from "../components/PopularArticles";
@@ -15,17 +16,14 @@ const components = {
   teaser: Teaser,
   page: Page,
   hero: Hero,
+  button: Button,
   "all-articles": AllArticles,
   article: Article,
   "popular-articles": PopularArticles,
 };
 
 storyblokInit({
-  accessToken: "xr4OhJ2GGQ6Oco2ugxQn0Att",
-  // for spaces located in the US or China:
-  // apiOptions: {
-  //   region: "us" or "cn", // you need to specify the region
-  // },
+  accessToken: "9QYfjiwWr1sWjeX32VQGnwtt",
   use: [apiPlugin],
   components,
 });

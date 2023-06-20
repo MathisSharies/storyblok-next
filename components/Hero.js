@@ -2,7 +2,6 @@ import { storyblokEditable } from "@storyblok/react";
 import Button from "./Button";
 
 const Hero = ({ blok }) => {
-  console.log(blok);
   return (
     <div {...storyblokEditable(blok)} className={`min-h-[500px]
     relative
@@ -10,9 +9,7 @@ const Hero = ({ blok }) => {
     items-center
     justify-center
     p-9
-    my-6
     bg-black
-    rounded-[5px]
     overflow-hidden ${blok.layout === 'constrained' ? 'container mx-auto' : ''}`}>
       <div className="relative z-10 text-center">
         <h1 className="text-5xl text-white font-bold mb-3">{blok.headline}</h1>

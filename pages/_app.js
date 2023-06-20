@@ -9,6 +9,7 @@ import Button from "../components/Button";
 import AllArticles from "../components/AllArticles";
 import Article from "../components/Article";
 import PopularArticles from "../components/PopularArticles";
+import CityCard from "../components/CityCard";
 
 const components = {
   feature: Feature,
@@ -17,6 +18,7 @@ const components = {
   page: Page,
   hero: Hero,
   button: Button,
+  citycard: CityCard,
   "all-articles": AllArticles,
   article: Article,
   "popular-articles": PopularArticles,

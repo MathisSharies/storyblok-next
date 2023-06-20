@@ -2,6 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from 'next/router'
 import {CaretDown} from "@phosphor-icons/react";
+import OurLocationsMenu from "./OurLocationsMenu";
 
 const Navigation = ({locales, locale, defaultLocale}) => {
   const router = useRouter()
@@ -31,11 +32,7 @@ const Navigation = ({locales, locale, defaultLocale}) => {
                   </svg>
                 </a>
               </Link>
-              <Link href={'/'}>
-                <a className={'ml-2 lg:ml-0'}>
-                  <span className="flex flex-row items-center w-full">Nos lieux <CaretDown size={20} /></span>
-                </a>
-              </Link>
+              <OurLocationsMenu />
             </div>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
